@@ -1,0 +1,29 @@
+<p>register works!</p>
+<div class="row">
+    <div class="col-6 loginForm">
+        <form #registrationForm="ngForm" (ngSubmit)="submitForm(registrationForm)">
+            <div class="FirstName">
+                <input type="text" name="FirstName" placeholder="Enter Your First Name" ngModel #FirstName required>
+            </div>
+            <div class="LastName">
+                <input type="text" name="LastName" placeholder="Enter Your Last Name" ngModel #LastName required>
+            </div>
+            <div class="email">
+                <input type="email"  placeholder="Enter Your Email Id" ngModel name="email" #email required>
+            </div>
+            <div class="PhoneNumber">
+                <input type="number" name="PhoneNumber" placeholder="Enter Your PhoneNumber" ngModel #PhoneNumber required>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Enter Your Password" ngModel name="password" #password required>
+            </div>
+            <div class="rePassword">
+                <input type="password" placeholder="Re-Enter Your Password" ngModel name="rePassword" #rePassword required>
+            </div>
+            <div class="loginButton">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
