@@ -1,0 +1,34 @@
+.loginForm{
+    margin-left: 200px;
+    background-color: rgb(144, 160, 176);
+    border: outset black 5px;
+    border-radius: 15px;
+    padding-left: 100px;
+}
+.FirstName{
+    margin-top: 20px;
+}
+.LastName{
+    margin-top: 30px;
+}
+.email{
+    margin-top: 20px;
+}
+.PhoneNumber{
+    margin-top: 30px;
+}
+.password{
+    margin-top: 30px;
+}
+.rePassword{
+    margin-top: 30px;
+}
+.loginButton{
+    margin: 20px 50px;
+}
+input{
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+}

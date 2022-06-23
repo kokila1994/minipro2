@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-12 leftNavContainer">
+        <p>mainbody works</p>
+        <button class="btn btn-secondary" routerLink="Software">Software</button>
+        <button class="btn btn-secondary" routerLink="healthcare">Health Care</button>
+        <button class="btn btn-secondary" routerLink="Infra">Infra</button>
+        <button class="btn btn-secondary" routerLink="deffence">Deffence</button>
+        <button class="btn btn-secondary" routerLink="solar">Solar</button>
+        <button class="btn btn-secondary" routerLink="AutoMobile">AutoMobile</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <button (click)="sendMessage()" class="btn btn-primary outputDecorater">Output Decorater Button Click Me!</button>
+        <p>{{message}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 Shared">
+        <p>Shared Service Values</p>
+        <p>{{displayvalues}}</p>
+        <p>{{subvalues}}</p>
+        <p>{{mulvalues}}</p>
+        <p>{{divvalues}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 custom">
+        <h5>Custom directive</h5>
+        <h4>This line without directive </h4>
+        <h4 appShared>This  line with  directive used</h4>
+    </div>
+</div>

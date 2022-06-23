@@ -1,0 +1,27 @@
+<p>login works!</p>
+<div class="row">
+    <div class="col-4 loginForm">
+        <form #loginform="ngForm" (ngSubmit)="submitForm(loginform)">
+            <div class="email">
+                <input type="email"  placeholder="Enter Your Email Id" ngModel name="email" #email required>
+            </div>
+            <div class="password">
+                
+                <input type="password" placeholder="Enter Your Password" ngModel name="password" #password required>
+            </div>
+            <div class="loginButton">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <a href="" routerLink="register">Please Click Here For SignUp!</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <app-mainbody [message]="showMessage"(messageEvent)="receivedata($event)"></app-mainbody>
+    <p>{{r_data}}</p>
+</div>
+<router-outlet></router-outlet>
